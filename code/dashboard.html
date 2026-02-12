@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Events - EventSync</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Simple Header -->
+    <header>
+        <div class="container">
+            <h1>📅 EventSync</h1>
+            <nav>
+                <a href="index.html">Events</a>
+                <a href="dashboard.html" class="active">My Events</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h2>My Registered Events</h2>
+            
+            <!-- Statistics -->
+            <div class="stats">
+                <div class="stat-box">
+                    <h3 id="total-events">0</h3>
+                    <p>Total Registrations</p>
+                </div>
+            </div>
+
+            <!-- Registered Events List -->
+            <div id="registered-list">
+                <!-- JavaScript will populate this -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="empty-state" style="display: none;">
+                <p>You haven't registered for any events yet.</p>
+                <a href="index.html" class="btn-primary">Browse Events</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EventSync - Sprint 1 MVP</p>
+    </footer>
+
+    <script src="js/events.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
